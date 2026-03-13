@@ -173,8 +173,16 @@ document.addEventListener('DOMContentLoaded', () => {
     
     "lgbtq+ rights",
     "lazy bastard",
-    
-  ];
+
+    "dance to the rhythm",
+    "the do",
+
+    "totally lysm <3",
+    "hyperpop is fire",
+
+    "do i make you proud",
+    "i tried so hard",
+   ];
   let bioText = '';
   let bioIndex = 0;
   let bioMessageIndex = Math.floor(Math.random() * bioMessages.length);
