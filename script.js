@@ -120,6 +120,8 @@ document.addEventListener('DOMContentLoaded', () => {
     "adb the femboy",
     "herewasadb",
     "importadb",
+    "wifiadb",
+    "bdainternet",
   ];
   let name = names[Math.floor(Math.random() * names.length)];
   let nameText = '';
