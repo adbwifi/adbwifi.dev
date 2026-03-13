@@ -3,31 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>adbwifi's profile</title>
+    <title>adbwifi.dev</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+
+    <meta content="adbwifi" property="og:title"/>
+    <meta content="larp master" property="og:description"/>
+    
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Courier New', monospace;
+            font-family: 'SimSun', monospace;
         }
 
-        
-        .custom-cursor {
-            position: fixed;
-            width: 40px;
-            height: 40px;
-            background: url('assets/custom_cursor.png') no-repeat center center;
-            background-size: contain;
-            pointer-events: none;
-            z-index: 9999;
-            transform: translate(-50%, -50%);
-        }
-
-        
-        body:not(.touch-device) {
-            cursor: none;
-        }
 
         body {
             background-color: #000;
@@ -50,28 +39,6 @@
             object-fit: cover;
             z-index: 1;
             pointer-events: none;
-        }
-
-        .glitch-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 2;
-            opacity: 0;
-            transition: opacity 0.5s;
-        }
-
-        #hacker-overlay, #snow-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 3;
         }
 
         .hidden {
@@ -258,16 +225,8 @@
             margin-bottom: 10px;
         }
 
-        
-        @font-face {
-            font-family: 'Angel Wish';
-            src: url('assets/Angel_wish.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-
         #profile-name {
-            font-family: 'Angel Wish', sans-serif;
+            font-family: 'SimSun', monospace;
             font-size: 32px;
             font-weight: bold;
             letter-spacing: 3px;
@@ -491,15 +450,35 @@
         }
 
         #python-bar {
-            background: linear-gradient(90deg, #ff6b6b, #ff9f9f);
+            background: linear-gradient(90deg, #3672cc, #174ea0);
         }
 
-        #cpp-bar {
+        #java-bar {
             background: linear-gradient(90deg, #4facfe, #00f2fe);
         }
 
+        #css3-bar {
+            background: linear-gradient(90deg, #2258eb, #416ee9);
+        }
+
+        #html5-bar {
+            background: linear-gradient(90deg, #ee6516, #b94909);
+        }
+
+        #javascript-bar {
+            background: linear-gradient(90deg, #d8c629, #d8c629);
+        }
+
+        #nodejs-bar {
+            background: linear-gradient(90deg, #4c8547, #3e8b37);
+        }
+
+        #typescript-bar {
+            background: linear-gradient(90deg, #2d79c7, #1d62a7);
+        }
+
         #csharp-bar {
-            background: linear-gradient(90deg, #43e97b, #38f9d7);
+            background: linear-gradient(90deg, #6921dd, #4b14a3);
         }
 
         
@@ -518,7 +497,7 @@
             padding: 8px 15px;
             border-radius: 20px;
             cursor: pointer;
-            font-family: 'Courier New', monospace;
+            font-family: 'SimSun', monospace;
             font-size: 14px;
             backdrop-filter: blur(5px);
             transition: all 0.3s;
@@ -659,7 +638,7 @@
         }
 
         #start-text {
-            font-family: 'Courier New', monospace;
+            font-family: 'SimSun', monospace;
             font-size: 24px;
             color: #fff;
             text-align: center;
@@ -840,33 +819,14 @@
             }
         }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Retro+Gaming&display=swap" rel="stylesheet">
 </head>
 <body class="home-theme" onload="initMedia()">
-    
-    <div class="custom-cursor"></div>
-
-    
     <div id="start-screen">
         <div id="start-text"></div>
     </div>
 
     <div class="container">
-        
-        <video id="background" autoplay loop muted playsinline webkit-playsinline>
-            <source src="assets/background.mp4" type="video/mp4">
-        </video>
-
-        
-        <div class="glitch-overlay"></div>
-        <div id="hacker-overlay" class="hidden">
-            
-        </div>
-        <div id="snow-overlay" class="hidden">
-            
-        </div>
-
-
+        <video id="background" autoplay loop muted playsinline webkit-playsinline> <source src="assets/background2.mp4" type="video/mp4"> </video>
         <div id="profile-block">
             <div class="profile-header">
                 <div class="profile-container">
@@ -878,11 +838,13 @@
                         <div class="badge-box">
                             <div class="badge-box-inner">
                                 <div class="badge-group">
+                                    <div class="badge-container">
+                                        <img src="assets/developer.png" alt="Developer" class="badge">
+                                        <span class="tooltip">Developer</span>
                                     </div>
                                     <div class="badge-container">
                                         <img src="assets/verified.gif" alt="Verified" class="badge">
                                         <span class="tooltip">Verified</span>
-                                    </div>
                                     </div>
                                 </div>
                             </div>
@@ -897,16 +859,16 @@
             <div class="profile-footer">
 
                 <div class="social-links">
-                    <a href="https://discord.gg/seralythmenu" target="_blank">
+                    <a href="https://discord.gg/seralythsoftware" target="_blank">
                         <img src="assets/discord.png" alt="Discord" class="social-icon">
                     </a>
-                    <a href="https://github.com/adbwifi" target="_blank">
+                    <a href="https://github.com/adbwifi target="_blank">
                         <img src="assets/github.png" alt="GitHub" class="social-icon">
                     </a>
                     <a href="https://www.youtube.com/@adbwifi" target="_blank">
                         <img src="assets/youtube.png" alt="YouTube" class="social-icon">
-                    </a>
-            </div>
+                   </a>
+                </div>
 
 
                 <div class="visitor-counter">
@@ -914,58 +876,108 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
                     </svg>
-                    <span id="visitor-count">999999999999</span>
+                    <span id="visitor-count">21234</span>
                     <span class="tooltip">Profile Views</span>
                 </div>
             </div>
         </div>
 
-
         <div id="skills-block" class="hidden">
             <h2 class="skills-title">Programming Skills</h2>
-            <div class="skill">
-                <div class="skill-name">
-                    <img src="assets/python.png" alt="Python" class="skill-icon">
-                    <span>Python</span>
-                    <span>87%</span>
-                </div>
-                <div class="skill-bar-container">
-                    <div id="python-bar" class="skill-bar"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <div class="skill-name">
-                    <img src="assets/cpp.png" alt="C++" class="skill-icon">
-                    <span>C++</span>
-                    <span>75%</span>
-                </div>
-                <div class="skill-bar-container">
-                    <div id="cpp-bar" class="skill-bar"></div>
-                </div>
-            </div>
+
             <div class="skill">
                 <div class="skill-name">
                     <img src="assets/csharp.png" alt="C#" class="skill-icon">
                     <span>C#</span>
-                    <span>80%</span>
+                    <span>100%</span>
                 </div>
                 <div class="skill-bar-container">
                     <div id="csharp-bar" class="skill-bar"></div>
                 </div>
             </div>
+
+            <div class="skill">
+                <div class="skill-name">
+                    <img src="assets/python.png" alt="Python" class="skill-icon">
+                    <span>Python</span>
+                    <span>95%</span>
+                </div>
+                <div class="skill-bar-container">
+                    <div id="python-bar" class="skill-bar"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">
+                    <img src="assets/javascript.png" alt="JavaScript" class="skill-icon">
+                    <span>JavaScript</span>
+                    <span>75%</span>
+                </div>
+                <div class="skill-bar-container">
+                    <div id="javascript-bar" class="skill-bar"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">
+                    <img src="assets/typescript.png" alt="TypeScript" class="skill-icon">
+                    <span>TypeScript</span>
+                    <span>75%</span>
+                </div>
+                <div class="skill-bar-container">
+                    <div id="typescript-bar" class="skill-bar"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">
+                    <img src="assets/css3.png" alt="CSS3" class="skill-icon">
+                    <span>CSS3</span>
+                    <span>70%</span>
+                </div>
+                <div class="skill-bar-container">
+                    <div id="css3-bar" class="skill-bar"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">
+                    <img src="assets/nodejs.png" alt="Node.js" class="skill-icon">
+                    <span>Node.js</span>
+                    <span>70%</span>
+                </div>
+                <div class="skill-bar-container">
+                    <div id="nodejs-bar" class="skill-bar"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">
+                    <img src="assets/html5.png" alt="HTML5" class="skill-icon">
+                    <span>HTML5</span>
+                    <span>65%</span>
+                </div>
+                <div class="skill-bar-container">
+                    <div id="html5-bar" class="skill-bar"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">
+                    <img src="assets/java.png" alt="Java" class="skill-icon">
+                    <span>Java</span>
+                    <span>35%</span>
+                </div>
+                <div class="skill-bar-container">
+                    <div id="java-bar" class="skill-bar"></div>
+                </div>
+            </div>
         </div>
 
-
-        <div id="results-button-container" class="hidden">
-            <button id="results-theme">View Results</button>
+        <div id="results-button-container">
+            <button id="results-theme">Programming Skills</button>
             <div id="results-hint" class="hidden">Click again to return to profile</div>
         </div>
-
-
-        <div class="controls">
-            <div id="home-theme" class="theme-button">1</div>
-        </div>
-
 
         <div class="top-controls">
             <div class="volume-control">
@@ -974,28 +986,15 @@
                 </svg>
                 <input id="volume-slider" class="slider" type="range" min="0" max="1" step="0.01" value="0.3">
             </div>
-            <div class="transparency-control">
-                <svg class="transparency-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
-                </svg>
-                <input id="transparency-slider" class="slider" type="range" min="0" max="1" step="0.01" value="0.7">
-            </div>
         </div>
     </div>
 
 
-    <audio id="background-music" loop>
-        <source src="assets/background_music.mp3" type="audio/mp3">
+   <audio id="background-music" loop>
+   <source src="assets/" type="audio/mp3">
     </audio>
-   
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
-
     <script src="script.js"></script>
 </body>
-
 </html>
-
