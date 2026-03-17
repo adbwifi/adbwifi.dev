@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
    "gay furry femboy who loves his bf",
     "fuck homophobia",
 
-    "totally <3",
+    "bleh",
     "protogen fursona",
 
     "good morning usa!",
@@ -177,11 +177,14 @@ document.addEventListener('DOMContentLoaded', () => {
     "dance to the rhythm",
     "the do",
 
-    "totally lysm <3",
+    "hahahahaha",
     "hyperpop is fire",
 
     "do i make you proud",
     "i tried so hard",
+    
+    "blah",
+    "chicken sammich",
    ];
   let bioText = '';
   let bioIndex = 0;
