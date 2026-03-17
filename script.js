@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "good morning usa!",
     "i use arch btw",
 
-    "i love my femboy",
+    "i love vscode",
     "i love being a femboy",
     
     "lgbtq+ rights",
