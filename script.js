@@ -113,13 +113,14 @@ document.addEventListener('DOMContentLoaded', () => {
     "kit",
     "yunzii",
     "deathbyrobotnik",
-    "h",
+    "gay femboy",
     "kingofmexico",
     "robotnik :3",
     "67mangogod",
     "robotnik the femboy",
     "herewasrobornik",
     "importrobotnik",
+  
   ];
   let name = names[Math.floor(Math.random() * names.length)];
   let nameText = '';
