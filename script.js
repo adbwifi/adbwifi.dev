@@ -108,20 +108,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   const names = [
-    "adbwifi",
+    "robotnikjones",
     "lotad4k",
     "kit",
     "yunzii",
-    "deathbyadb",
-    "totalwifi",
+    "deathbyrobotnik",
+    "h",
     "kingofmexico",
-    "adb :3",
+    "robotnik :3",
     "67mangogod",
-    "adb the femboy",
-    "herewasadb",
-    "importadb",
-    "wifiadb",
-    "bdainternet",
+    "robotnik the femboy",
+    "herewasrobornik",
+    "importrobotnik",
   ];
   let name = names[Math.floor(Math.random() * names.length)];
   let nameText = '';
